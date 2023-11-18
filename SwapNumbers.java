@@ -1,30 +1,19 @@
-import java.util.Scanner;
-
 public class SwapNumbers {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        int num1 = 5;
+        int num2 = 10;
 
-        // Get the first number from the user
-        System.out.print("Enter the first number: ");
-        int num1 = scanner.nextInt();
+        System.out.println("Before swapping:");
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
 
-        // Get the second number from the user
-        System.out.print("Enter the second number: ");
-        int num2 = scanner.nextInt();
-
-        System.out.println("Before swapping: ");
-        System.out.println("First number: " + num1);
-        System.out.println("Second number: " + num2);
-
-        // Swap the numbers
+        // Swapping logic
         int temp = num1;
         num1 = num2;
         num2 = temp;
 
-        System.out.println("After swapping: ");
-        System.out.println("First number: " + num1);
-        System.out.println("Second number: " + num2);
-
-        scanner.close();
+        System.out.println("After swapping:");
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
     }
 }
