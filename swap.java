@@ -1,17 +1,30 @@
-import java.util.*;  
-class Swap_With {  
-    public static void main(String[] args) {  
-       int x, y, t;// x and y are to swap   
-       Scanner sc = new Scanner(System.in);  
-       System.out.println("Enter the value of X and Y");  
-       x = sc.nextInt();  
-       y = sc.nextInt();  
-       System.out.println("before swapping numbers: "+x +"  "+ y);  
-       /*swapping */  
-       t = x;  
-       x = y;  
-       y = t;  
-       System.out.println("After swapping: "+x +"   " + y);  
-       System.out.println( );  
-    }    
-}  
+import java.util.Scanner;
+
+public class SwapNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Get the first number from the user
+        System.out.print("Enter the first number: ");
+        int num1 = scanner.nextInt();
+
+        // Get the second number from the user
+        System.out.print("Enter the second number: ");
+        int num2 = scanner.nextInt();
+
+        System.out.println("Before swapping: ");
+        System.out.println("First number: " + num1);
+        System.out.println("Second number: " + num2);
+
+        // Swap the numbers
+        int temp = num1;
+        num1 = num2;
+        num2 = temp;
+
+        System.out.println("After swapping: ");
+        System.out.println("First number: " + num1);
+        System.out.println("Second number: " + num2);
+
+        scanner.close();
+    }
+}
